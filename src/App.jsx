@@ -8,8 +8,8 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setData((prev) => [
-      ...prev,
       { comments: comments, upVotes: 0, downVotes: 0, replies: [] },
+      ...prev,
     ]);
     setComments("");
   };
